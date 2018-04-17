@@ -1,0 +1,32 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>js</title>
+</head>
+<script language="javascript">
+    function aa(){
+        var r=document.getElementsByName("r");
+        for(var i=0;i<r.length;i++){
+            if(r[i].checked){
+                alert(r[i].value+","+r[i].nextSibling.nodeValue);
+            }
+        }
+    }
+</script>
+<body>
+<form name="form1" method="post" action="">
+    <input type="checkbox" onclick="aa()" name="r" value="1">a<br>
+    <input type="checkbox" onclick="aa()" name="r" value="2">b<br>
+    <input type="checkbox" onclick="aa()" name="r" value="3">c<br>
+    <input type="checkbox" name="r" value="4">d<br>
+    <input type="checkbox" name="r" value="5">e<br>
+    <input type="checkbox" name="r" value="6">f<br>
+    <input type="checkbox" name="r" value="7">g<br>
+    <input type="checkbox" name="r" value="8">h<br>
+    <input type="checkbox" name="r" value="9">i<br>
+    <input type="checkbox" name="r" value="10">j<br>
+    <br>
+    <input type="button" onclick="aa()" value="button">
+</form>
+</body>
+</html>
