@@ -10,25 +10,15 @@
 <style type="text/css">
     html,body{margin:0;padding:0;height:100%;
         font-family: "Microsoft YaHei"}
-    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_title {color:#CC5522;font-size:10px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
     .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
-    .button{width:25%;font-size:0.5em;margin: 0 !important;}
+    .button{width:50%;font-size:0.2em;margin: 0 !important;}
     .button2{width:50%;font-size:0.5em;margin: 0 !important; border-radius:0 !important;}
     .btn{padding-left:3px !important;padding-right:3px !important;margin: 0;}
-    .dropdown{width:100%; border-radius:0 !important;}
+    .dropdown{width:200%; border-radius:0 !important;}
 
-    .dropdown-menu{width: 400%; }
+    .dropdown-menu{width: 200%; }
 
-    #anniversary_menu{left: 0%;padding:0;}
-    #synthesis_menu{left: -100%;padding:0;}
-    #schoolfellow_menu{left: -200%;padding:0;}
-    #sports_menu{left: -300%;padding:0;}
-
-
-    #academic_menu{left: 0%;padding:0;}
-    #exhibition_menu{left: -100%;padding:0;}
-    #open_menu{left: -200%;padding:0;}
-    #art_menu{left: -300%;padding:0;}
 
     .BMapLabel{padding:0px !important;border:1px solid #00e !important;}
 
@@ -42,98 +32,10 @@
 </head>
 
 <body>
-    <div id="shareImage" style="overflow:hidden;height:0px"><img src="2cy.jpg"></div>
-    <div style="position:relative;width:100%;height:100%;background-color: #9932cc">
+    <div id="contain" style="position:relative;width:100%;height:100%;background-color: #ffffff">
 
 
-<div class="btn-group" style="width:100%;">
-    <div class="btn-group button">
-        <button type="button" id="anniversary" class="btn btn-default dropdown-toggle dropdown" data-toggle="dropdown" aria-expanded="false">
-            秩年类 <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" id="anniversary_menu" role="menu">
 
-        </ul>
-    </div>
-    <div class="btn-group button">
-        <button type="button" id="synthesis" class="btn btn-default dropdown-toggle dropdown" data-toggle="dropdown" aria-expanded="false">
-            综合类 <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" id="synthesis_menu" role="menu">
-
-        </ul>
-    </div>
-    <div class="btn-group button">
-        <button type="button" id="schoolfellow" class="btn btn-default dropdown-toggle dropdown" data-toggle="dropdown" aria-expanded="false">
-            院系校友类 <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" id="schoolfellow_menu" role="menu">
-
-        </ul>
-    </div>
-
-    <div class="btn-group button">
-        <button type="button" id="sports" class="btn btn-default dropdown-toggle dropdown" data-toggle="dropdown" aria-expanded="false">
-            体育类 <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" id="sports_menu" role="menu">
-
-        </ul>
-    </div>
-</div>
-
-<div class="btn-group" style="width:100%;">
-    <div class="btn-group button">
-        <button type="button" id="academic" class="btn btn-default dropdown-toggle dropdown" data-toggle="dropdown" aria-expanded="false">
-            学术类 <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" id="academic_menu" role="menu">
-
-        </ul>
-    </div>
-    <div class="btn-group button">
-        <button type="button" id="exhibition" class="btn btn-default dropdown-toggle dropdown" data-toggle="dropdown" aria-expanded="false">
-            展览 <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" id="exhibition_menu" role="menu">
-
-        </ul>
-    </div>
-    <div class="btn-group button">
-        <button type="button" id="open" class="btn btn-default dropdown-toggle dropdown" data-toggle="dropdown" aria-expanded="false">
-            开放类 <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" id="open_menu" role="menu">
-
-        </ul>
-    </div>
-    <div class="btn-group button">
-        <button type="button" id="art" class="btn btn-default dropdown-toggle dropdown" data-toggle="dropdown" aria-expanded="false">
-            艺术类 <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" id="art_menu" role="menu">
-
-        </ul>
-    </div>
-</div>
-
-        <div style="width: 100%;height: 50px; background-color: #FFFFFF; align-content: center;" >
-            <form>
-                查看对应时间的活动:
-                <br />
-                <input type="checkbox" onClick="chooseAll()" name="click" checked="true" style="margin-left: 5%;">
-                全选
-                <input type="checkbox" onClick="choose27()" name="click" checked="true" style="margin-left: 5%;">
-                27日
-                <input type="checkbox" onClick="choose28()" name="click" checked="true" style="margin-left: 5%;">
-                28日
-                <input type="checkbox" onClick="choose29()" name="click" checked="true" style="margin-left: 5%;">
-                29日
-            </form>
-        </div>
-
-        <!--百度地图容器-->
-        <div style="width:96%;height:80%;margin-left:2%; margin-top: 1%; border:#ccc solid 5px;" id="map"></div>
     </div>
 
     <script type="text/javascript" src="data.js"></script>
