@@ -57,21 +57,7 @@ function init_menu(){
     $("#"+major).addClass("btn-info"); // 追加样式
 
 
-    if (open)
-    {
-        x = lab_list[open].loc[0];
-        y = lab_list[open].loc[1];
-        z = 16;
-        lab_list[open].isOpen=1;
-        var lab_name = lab_list[open].name;
-        $("title").html("清华2018校庆地图 | " + lab_name);
-    }else
-    {
-        x = mapdata[major].center[0];
-        y = mapdata[major].center[1];
-        z = 16;
-        $("title").html("清华2018校庆地图 | " + "开放实验室一览");
-    }
+    $("title").html("清华2018校庆地图 | " + "开放实验室一览");
 }
 
 
