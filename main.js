@@ -1,10 +1,3 @@
-var category;
-var open;
-var x;
-var y;
-var z;
-var lab_list = [];
-
 function init_menu(){
     var container = document.getElementById("contain");
     var menu;
@@ -16,9 +9,9 @@ function init_menu(){
         menu.setAttribute("class", "btn-group");
         menu.setAttribute("style", "width:100%;");
         container.appendChild(menu);
-        var sub_menu = document.createElement('div');
-        sub_menu.setAttribute("class", "button btn-group");
-        menu.appendChild(sub_menu);
+        //var sub_menu = document.createElement('div');
+        //sub_menu.setAttribute("class", "button btn-group");
+        //menu.appendChild(sub_menu);
 
         var major_box = document.createElement('button');
         major_box.id = major;
@@ -27,7 +20,7 @@ function init_menu(){
         major_box.setAttribute("type", "button");
         major_box.setAttribute("data-toggle", "dropdown");
         major_box.setAttribute("aria-expanded", "false");
-        sub_menu.appendChild(major_box);
+        menu.appendChild(major_box);
 
         var caret = document.createElement('span');
         caret.setAttribute("class", "caret");
@@ -37,7 +30,7 @@ function init_menu(){
         lab_ul.setAttribute("class", "dropdown-menu");
         lab_ul.setAttribute("role", "menu");
         lab_ul.setAttribute("style", "min-width: 100px;");
-        sub_menu.appendChild(lab_ul);
+        menu.appendChild(lab_ul);
 
 
         for (var j=0;j<labs.length;j++)
