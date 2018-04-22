@@ -1,8 +1,8 @@
 function init_menu(){
     alert('open');
+    alert(mapdata.length);
     var container = document.getElementById("contain");
     var menu;
-    alert(mapdata.length);
     for (var i=0;i<mapdata.length;i++)
     {
         var major = mapdata[i].major;
