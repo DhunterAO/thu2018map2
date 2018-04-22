@@ -2,6 +2,7 @@ function init_menu(){
     alert('open');
     var container = document.getElementById("contain");
     var menu;
+    alert(mapdata.length);
     for (var i=0;i<mapdata.length;i++)
     {
         var major = mapdata[i].major;
@@ -46,6 +47,7 @@ function init_menu(){
             lab_bar.appendChild(lab_link);
         }
     }
+    alert('close');
 
     $("#"+major).addClass("btn-info"); // 追加样式
 
