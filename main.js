@@ -1,6 +1,4 @@
 function init_menu(){
-    alert(a);
-    alert(mapdata.length);
     var container = document.getElementById("contain");
     var menu;
     for (var i=0;i<mapdata.length;i++)
@@ -47,7 +45,6 @@ function init_menu(){
             lab_bar.appendChild(lab_link);
         }
     }
-    alert('close');
 
     $("#"+major).addClass("btn-info"); // 追加样式
 
