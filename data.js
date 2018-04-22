@@ -1028,6 +1028,6 @@ var mapdata=[
         ],
         center: [116.33192,40.012722]
     }
-]
+];
 
-
+alert('this is data.js');
