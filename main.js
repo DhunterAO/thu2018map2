@@ -1,5 +1,5 @@
 function init_menu(){
-    alert('open');
+    alert(a);
     alert(mapdata.length);
     var container = document.getElementById("contain");
     var menu;

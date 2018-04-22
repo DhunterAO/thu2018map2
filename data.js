@@ -1,3 +1,5 @@
+var a='hello';
+
 var mapdata=[
     {
         major: '土木工程系',
@@ -1026,6 +1028,6 @@ var mapdata=[
         ],
         center: [116.33192,40.012722]
     }
-];
+]
 
 
