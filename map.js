@@ -65,7 +65,7 @@ function addMapOverlay(){
         title: "",
         enableMessage: true
     };
-    var infoWindow = new BMap.InfoWindow(lab.name + '<br />' + '地点:' + lab.place + '<br />' + '联系人:' + lab.leader + '<br />' + '联系方式:' + lab.phone, opts);
+    var infoWindow = new BMap.InfoWindow(lab.name + '<br />' + '地点:' + lab.place, opts);
 
     addClickHandler(marker, infoWindow);
     map.addOverlay(marker);
