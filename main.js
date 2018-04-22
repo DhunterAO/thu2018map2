@@ -1,4 +1,5 @@
 function init_menu(){
+    alert('open');
     var container = document.getElementById("contain");
     var menu;
     for (var i=0;i<mapdata.length;i++)
@@ -35,7 +36,6 @@ function init_menu(){
 
         for (var j=0;j<labs.length;j++)
         {
-            console.log(labs[j]);
             var lab_bar = document.createElement('li');
             lab_ul.appendChild(lab_bar);
 
