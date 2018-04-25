@@ -45,6 +45,9 @@ function init_menu(){
             lab_bar.appendChild(lab_link);
         }
     }
+    var blank = document.createElement('div');
+    blank.setAttribute("style", "height: 100px; width:100%");
+    container.appendChild(blank);
 
     $("#"+major).addClass("btn-info"); // 追加样式
 
