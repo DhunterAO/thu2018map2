@@ -17,6 +17,7 @@ function init_menu(){
         major_box.id = major;
         major_box.innerText = major;
         major_box.setAttribute("class", "btn btn-default dropdown-toggle dropdown btn-info");
+        major_box.setAttribute("style", "width:100%; background-color:#337ab7; border-color: #f5f5f5");
         major_box.setAttribute("type", "button");
         major_box.setAttribute("data-toggle", "dropdown");
         major_box.setAttribute("aria-expanded", "false");
@@ -29,7 +30,7 @@ function init_menu(){
         var lab_ul = document.createElement('ul');
         lab_ul.setAttribute("class", "dropdown-menu");
         lab_ul.setAttribute("role", "menu");
-        lab_ul.setAttribute("style", "min-width: 100px;");
+        lab_ul.setAttribute("style", "min-width: 100px; ");
         menu.appendChild(lab_ul);
 
 
