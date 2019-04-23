@@ -72,7 +72,7 @@ function addMapOverlay(){
     // } else {
     //     var infoWindow = new BMap.InfoWindow(lab.name + '<br />' + '地点:' + lab.place, opts);
     // }
-    var infoWindow = new BMap.InfoWindow(lab.name + '<br />' + '地点:' + lab.place + '<br />' + '网站:' + '<br />http://www.civil.tsinghua.edu.cn/ce/79.html', opts);
+    var infoWindow = new BMap.InfoWindow(lab.name + '<br />' + '地点:' + lab.place, opts);
     addClickHandler(marker, infoWindow);
     map.addOverlay(marker);
 

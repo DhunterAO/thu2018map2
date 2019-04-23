@@ -5,13 +5,11 @@ var mapdata=[
             {
                 name: '结构工程与振动教育部重点实验室工程结构分室',
                 place: '土木馆东大厅',
-                website: 'http://www.civil.tsinghua.edu.cn/ce/79.html',
                 loc: [116.336627,40.009906]
             },
             {
                 name: '建筑材料耐久性实验室',
                 place: '焊接馆303',
-                website: 'http://www.civil.tsinghua.edu.cn/ce/79.html',
                 loc: [116.336943,40.007182]
             },
             {
