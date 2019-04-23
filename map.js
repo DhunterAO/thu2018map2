@@ -61,12 +61,18 @@ function addMapOverlay(){
     );
 
     var opts = {
-        width: 200,
+        width: 300,
         title: "",
         enableMessage: true
     };
-    var infoWindow = new BMap.InfoWindow(lab.name + '<br />' + '地点:' + lab.place, opts);
-
+    // console.log(lab.website)
+    // if (lab.hasOwnProperty('website')) {
+    //     var infoWindow = new BMap.InfoWindow(lab.name + '<br />' + '地点:' + lab.place, opts + '<br />网站:' + lab.website);
+    //
+    // } else {
+    //     var infoWindow = new BMap.InfoWindow(lab.name + '<br />' + '地点:' + lab.place, opts);
+    // }
+    var infoWindow = new BMap.InfoWindow(lab.name + '<br />' + '地点:' + lab.place + '<br />' + '网站:' + '<br />http://www.civil.tsinghua.edu.cn/ce/79.html', opts);
     addClickHandler(marker, infoWindow);
     map.addOverlay(marker);
 

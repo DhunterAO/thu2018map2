@@ -53,7 +53,7 @@ function init_menu(){
     $("#"+major).addClass("btn-info"); // 追加样式
 
 
-    $("title").html("清华2018校庆地图 | " + "开放实验室一览");
+    $("title").html("清华2019校庆地图 | " + "开放实验室一览");
 }
 
 
