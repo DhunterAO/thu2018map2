@@ -72,7 +72,11 @@ function addMapOverlay(){
     // } else {
     //     var infoWindow = new BMap.InfoWindow(lab.name + '<br />' + '地点:' + lab.place, opts);
     // }
-    var infoWindow = new BMap.InfoWindow(lab.name + '<br />' + '地点:' + lab.place, opts);
+    if (lab.hasOwnProperty('logging')) {
+        var infoWindow = new BMap.InfoWindow(lab.name + '<br />' + '地点:' + lab.place + '<br />' + '备注:' + lab.logging, opts);
+    } else {
+        var infoWindow = new BMap.InfoWindow(lab.name + '<br />' + '地点:' + lab.place, opts);
+    }
     addClickHandler(marker, infoWindow);
     map.addOverlay(marker);
 
