@@ -42,7 +42,9 @@ function init_menu(){
             var lab_link = document.createElement('a');
             lab_link.innerText = labs[j].name;
             lab_link.setAttribute("style", "word-break:break-all;white-space:normal; border-bottom: 1px solid;");
-            lab_link.setAttribute("href", "https://dhunterao.github.io/thu2018map2/map.html?c="+i+"&o="+j);
+            if (j<labs.length-1) {
+                lab_link.setAttribute("href", "https://dhunterao.github.io/thu2018map2/map.html?c="+i+"&o="+j);
+            }
             lab_bar.appendChild(lab_link);
         }
     }
