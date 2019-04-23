@@ -44,6 +44,8 @@ function init_menu(){
             lab_link.setAttribute("style", "word-break:break-all;white-space:normal; border-bottom: 1px solid;");
             if (i < mapdata.length-1) {
                 lab_link.setAttribute("href", "https://dhunterao.github.io/thu2018map2/map.html?c="+i+"&o="+j);
+            } else {
+                lab_link.innerText += ' \n ' + labs[j].place
             }
             lab_bar.appendChild(lab_link);
         }
